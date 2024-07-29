@@ -6,5 +6,4 @@ Aplikasi CRUD Android Studio
 3. Update Data
 4. Delete Data
 
-============================
 This project create to finish my task in university
