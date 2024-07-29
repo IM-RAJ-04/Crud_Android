@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".UpdateCourseActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crud"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        tools:ignore="ContentDescription" />
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        android:hint="@string/enter_course_name_update"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idEdtCourseDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        android:hint="@string/enter_course_duration"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <!--edit text to display course tracks-->
+    <EditText
+        android:id="@+id/idEdtCourseTracks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        android:hint="@string/enter_course_tracks_update"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <!--edit text for course description-->
+    <EditText
+        android:id="@+id/idEdtCourseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        android:hint="@string/enter_course_description_update"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!--button for updating our course-->
+    <Button
+        android:id="@+id/idBtnUpdateCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/update_course"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <!--button for deleting our course-->
+
+
+    <Button
+        android:id="@+id/idBtnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="200dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/delete_course"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+    </RelativeLayout>
+</LinearLayout>

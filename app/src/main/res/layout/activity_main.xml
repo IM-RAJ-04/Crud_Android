@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crud"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        tools:ignore="ContentDescription" />
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_course_name"
+        android:minHeight="48dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idEdtCourseDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Course Duration"
+        android:minHeight="48dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+    <!--edit text to display course tracks-->
+    <EditText
+        android:id="@+id/idEdtCourseTracks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_course_tracks"
+        android:minHeight="48dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+    <!--edit text for course description-->
+    <EditText
+        android:id="@+id/idEdtCourseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_course_description"
+        android:minHeight="48dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#45474B"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--button for adding new course-->
+    <Button
+        android:id="@+id/idBtnAddCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/add_course"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <!--new button for opening our course list activity-->
+    <Button
+        android:id="@+id/readCourseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="200dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/read_all_courses"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+    </RelativeLayout>
+</LinearLayout>

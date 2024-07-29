@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="idRVCourses" type="id" />
+    <item name="readCourseBtn" type="id" />
+</resources>
